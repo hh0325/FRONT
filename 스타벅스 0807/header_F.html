@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+
+            padding: 0px;
+            margin: 0px;
+        }
+
+        nav{
+            background-color: #f6f5ef;
+            position: fixed;
+            top:0px;
+             border: 1px solid grey;
+            width: 100%;
+            
+        }
+
+        nav .inner{
+            width: 1000px;
+            height: 80px;   
+             border: 1px solid grey;
+            margin: 0 auto;  
+            position: relative;    
+        }
+
+        .menubar {
+            list-style: none;
+            display: flex;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .menu1 .item_name{
+            padding: 10px 20px 30px 20px;
+
+        } 
+        .menu1 .item_name:hover{
+            background-color:#333333;
+
+    
+            /*   border-radius: 10px 10px 0px 0px;  위쪽 좌우  아래쪽 좌우*/
+        } 
+     
+.menu1 a{
+    color: #333333;
+    text-decoration: none;   
+}
+
+.menu1 a:hover{
+color: #00B050;
+text-decoration: underline;    
+}
+
+        .menu1 .item_contents{
+            display: none;
+        }
+
+        /* 하위숨김메뉴 */
+        .menu1:hover .item_contents{
+            display: block;
+            position: fixed;
+            left:0px;
+            width:100%;
+            height: 300px;                       
+        }
+
+
+        .menu1 .item_contents .contents_menu{
+            height: 90%;
+            background-color:#333333;
+            padding: 30px;
+            color: white;            
+        }
+        
+
+       
+.contents_menu{
+    display: flex;
+   
+}
+.contents_menu ul{
+    list-style: none;
+    padding: 10px;
+    font-size: 16px;
+    gap: 40px;
+    margin-right: 60px;
+    margin: 0 auto;
+
+}
+
+.contents_menu li{
+    color: lightgray;
+    font-size: 13px;
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+<nav>
+    <div class="inner">
+        <!-- 메뉴-->
+        <ul class="menubar">
+            <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+  <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+
+  <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+
+
+              <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+
+
+              <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+
+
+              <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+
+              <!-- 상위메뉴-->
+            <li  class="menu1">
+                <div class="item_name"><a href="">coffee</a></div>  <!-- 이름영역-->
+                <!-- 숨김메뉴-->
+                <div class="item_contents">                      
+                    <div class="contents_menu">
+                        <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+
+                         <ul> 커피
+                            <li>스타벅스 원두</li>
+                            <li> 스타벅스 커피</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </li>
+
+          
+
+        
+
+        </ul>
+    </div>
+</nav>
+
+</body>
+</html>

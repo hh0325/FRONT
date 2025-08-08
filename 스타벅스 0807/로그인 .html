@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .login {
+            height: 700px;
+            background-image: url("./로그인이미지.jpg");
+            background-position: center;
+            background-size: cover;
+           
+        }
+.login_t{
+    height: 600px;
+   padding: 100px;
+  margin: 0 auto;
+
+}
+
+     .login h2 {
+            width: 100px;
+            margin: 0 auto;
+            font-size: 26px;
+            text-align: center;
+            height: 50px;
+            color: whitesmoke;
+
+        }
+
+        .login_wrap {
+            background-color: white;
+            width: 600px;
+            height: 500px;
+            border: 0.5px solid gray;
+            border-radius: 3px;
+            margin: 0 auto;
+        }
+
+        .p1 {
+            height: 80px;
+
+            text-align: center;
+            font-size: 18px;
+            color: rgb(87, 79, 79);
+            border: 0.1px solid gray;
+            border-radius: 3px;
+
+        }
+
+        .p1 span {
+            color: #006633;
+        }
+
+
+
+        .login_info {
+            height: 230px;
+            margin-top: 10px;
+            padding: 10px;
+
+
+        }
+
+        .login_info input {
+            width: 100%;
+            height: 45px;
+            border-radius: 3px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            color: gray;
+            border: 0.4px solid gray;
+        }
+
+        .login_info button {
+            width: 100%;
+            height: 65px;
+            padding: 10px;
+            text-align: center;
+            background-color: #006633;
+            color: whitesmoke;
+            font-size: 25px;
+
+            margin-top: 7px;
+            border-style: none;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+.login_info button:hover{
+text-decoration: underline;}
+
+
+
+        .save {
+            display: flex;
+
+            background-size: center;
+
+        }
+
+        .save input {
+            width: 25px;
+            height: 25px;
+            background-image: url("./check.png");
+        }
+
+
+
+        .p2 {
+            height: 100px;
+            font-size: 14.5px;
+            color: #006633;
+            width: 95%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .login_f {
+            height: 40px;
+            cursor: pointer;
+        }
+
+.login_f li:hover{
+    text-decoration: underline;
+}
+
+        .login_f ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .login_f li {
+            width: 33.3%;
+            color: rgb(87, 79, 79);
+            font-size: 16px;
+
+        }
+
+
+
+
+/* 체크박스 기본 숨김 */
+.check input[type="checkbox"] {
+  display: none;
+}
+
+/* 라벨 스타일 - 회색 배경 */
+.check label {
+  display: inline-block;
+  padding-left: 28px; /* 아이콘 공간 */
+  background: url("./check.png") no-repeat left center; /* 회색 체크 아이콘 */
+  background-size: 20px 20px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+/* 체크된 상태 - 초록 배경 */
+.check input[type="checkbox"]:checked + label {
+  background-image: url("./check2.png"); /* 초록 체크 아이콘 */
+}
+
+.check{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #3F4141 ;
+    
+}
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="login_t">
+            <h2> 로그인</h2>
+
+            <div class="login_wrap">
+
+                <div class="p1">
+                    <p> <span>Welcome! </span>스타벅스 코리아에 오신 것을 환영합니다.</p>
+                </div>
+
+                <div class="login_info">
+                    <input type="text" placeholder="아이디를 입력해 주세요">
+                    <input type="text" placeholder="비밀번호를 입력해 주세요">
+
+                   <div class="check">
+  <input type="checkbox" id="saveId">
+  <label for="saveId">아이디 저장</label>
+</div>
+
+                    <button> 로그인 </button>
+                </div>
+
+                <p class="p2">
+                    * 타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 정기적인 비밀번호 변경을 해주시길 바랍니다. <br>
+                    * 스타벅스 코리아의 공식 홈페이지는 Internet Explorer 9.0 이상, Chrome, Firefox, Safari 브라우저에 최적화 되어있습니다.
+
+                </p>
+
+
+
+                <div class="login_f">
+                    <ul>
+                        <li> 회원가입 </li>
+                        <li> 아이디 찾기 </li>
+                        <li> 비밀번호 찾기 </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

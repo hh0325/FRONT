@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        height: 150px;
+
+        display: flex;
+        background: #f6f5ef;
+        position: relative;
+
+    }
+
+    .header_1 {
+
+        display: flex;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0px;
+    }
+
+    .header_1 ul {
+        display: flex;
+
+
+        position: relative;
+
+    }
+
+    .header_1 li {
+        text-align: left;
+        font-size: 13px;
+        color: rgb(51, 48, 48);
+
+        list-style: none;
+
+    }
+
+    .li_1 {
+        width: 70px;
+
+    }
+
+    .li_2 {
+        width: 100px;
+
+    }
+
+    .li_4 {
+        width: 80px;
+
+    }
+
+    .li_3 {
+        width: 200px;
+    }
+
+    .header_1_img {
+        width: 25px;
+        height: 25px;
+        border: 0.4px solid lightgray;
+        border-radius: 4px;
+        background-color: white;
+        position: relative;
+        top: 15px;
+        margin-left: 3px;
+
+        position: relative;
+
+    }
+
+
+    .header_1 img {
+        width: 18px;
+        height: 18px;
+
+        border-radius: 5px;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+
+    }
+
+    .header_1 a {
+        text-decoration-line: none;
+        color: gray;
+    }
+
+
+    .header_img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 20px;
+        left: 100px;
+
+    }
+
+
+    .header_2 {
+        display: flex;
+        height: 50px;
+        width: 1200px;
+        margin-top: 20px;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+
+    }
+
+    .header_2 ul {
+        display: flex;
+
+        margin-left: 300px;
+
+
+
+    }
+
+    .header_2 li {
+        font-size: 14px;
+        color: rgb(51, 48, 48);
+        list-style: none;
+        padding: 10px;
+
+    }
+
+    .li_5 {
+        width: 80px;
+    }
+
+    .li_6 {
+        width: 190px;
+    }
+
+    .li_7 {
+        width: 160px;
+    }
+
+    .li_8 {
+        width: 110px;
+    }
+
+    /* 로그인 */
+    .login {
+        height: 1200px;
+        background-image: url("./로그인이미지.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+    .login h2 {
+        width: 100px;
+        margin: 0 auto;
+        font-size: 26px;
+        text-align: center;
+        height: 50px;
+
+    }
+
+    .login_wrap {
+
+        width: 600px;
+        height: 500px;
+        border: 0.5px solid gray;
+        border-radius: 3px;
+        margin: 0 auto;
+    }
+
+    .p1 {
+        height: 80px;
+
+        text-align: center;
+        font-size: 18px;
+        color: rgb(87, 79, 79);
+        border: 0.1px solid gray;
+        border-radius: 3px;
+
+    }
+
+    .p1 span {
+        color: #006633;
+    }
+
+
+
+    .login_info {
+        height: 230px;
+        margin-top: 10px;
+        padding: 10px;
+
+
+    }
+
+    .login_info input {
+        width: 100%;
+        height: 45px;
+        border-radius: 3px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        color: gray;
+        border: 0.4px solid gray;
+    }
+
+    .login_info button {
+        width: 100%;
+        height: 65px;
+        padding: 10px;
+        text-align: center;
+        background-color: #006633;
+        color: whitesmoke;
+        font-size: 25px;
+
+        margin-top: 7px;
+        border-style: none;
+        border-radius: 3px;
+    }
+
+    .save {
+        display: flex;
+
+        background-size: center;
+
+    }
+
+    .save input {
+        width: 25px;
+        height: 25px;
+        background-image: url("./check.png");
+    }
+
+
+
+    .p2 {
+        height: 100px;
+        font-size: 14.5px;
+        color: #006633;
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .login_f {
+        height: 40px;
+    }
+
+    .login_f ul {
+        display: flex;
+        list-style: none;
+
+    }
+
+    .login_f li {
+        width: 33.3%;
+        color: rgb(87, 79, 79);
+        font-size: 16px;
+
+    }
+</style>
+
+<body>
+    <header>
+
+        <div class="header_img">
+            <img src="./스타벅스.png" alt="">
+        </div>
+
+
+        <div class="header_1">
+            <ul>
+                <li class="li_1"> <a href="">Sign In</a> </li>
+                <li class="li_2"><a href="">My Starbucks</a> </li>
+                <li class="li_3"> <a href="">Customer Service & Ideas</a> </li>
+                <li class="li_4"> <a href="">Find a Store</a> </li>
+
+            </ul>
+            <div class="header_1_img">
+                <img src="./icon_magnifier_black.png" alt="">
+            </div>
+        </div>
+
+
+
+
+        <div class="header_2">
+            <ul>
+                <li class="li_5">COFFEE
+                    <!--<div> </div>  이름영역
+<div class="menu">
+<div>1</div>    
+<div>2</div>
+</div>
+-->
+
+
+                </li>
+                <li class="li_5">MENU</li>
+                <li class="li_5">STORE</li>
+                <li class="li_5">ESG</li>
+                <li class="li_6">STARBUCKS REWARDS</li>
+                <li class="li_7">CORPORATE SALES</li>
+                <li class="li_8">WHAT'S NEW</li>
+            </ul>
+
+        </div>
+
+        </div>
+
+
+        </div>
+
+    </header>
+</body>
+
+</html>

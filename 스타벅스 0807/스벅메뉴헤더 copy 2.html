@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <style>
+        header {
+            height: 100px;
+            background-color: #f6f5ef;
+
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        ul {
+            list-style: none;
+        }
+
+
+
+        header .sub-menu {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+             border: 1px solid black;  
+
+
+        }
+
+        header .sub-menu ul.menu {
+            display: flex;
+            /*border: 1px solid black;*/
+
+            
+            margin: 0;
+        }
+
+        header .sub-menu ul.menu li {
+            position: relative;
+            /*border: 1px solid black;*/
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header .sub-menu ul.menu li::before {
+
+            content: "";
+            display: block;
+            width: 1px;
+            height: 12px;
+            background-color:#ccc;
+
+
+            position: absolute;            
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        header .sub-menu ul.menu li:first-child:before {
+            display: none;
+        }
+
+        header .sub-menu ul.menu li a {
+            /*  background-color: red;*/
+            font-size: 12px;
+            padding: 11px 16px;
+            display: block;
+            color: #656565;
+        }
+
+        header .sub-menu ul.menu li a:hover {
+            color: #000;
+        }
+
+
+        header .sub-menu .search {
+
+           /* background-color: red;*/
+            height: 34px;
+            position: relative;
+
+
+        }
+
+        header .sub-menu .search input {
+            width: 36px;
+            height: 34px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+            outline: none;
+            background-color: #fff;
+            color: #777;
+            transition: width .4s;
+        }
+
+
+        header .sub-menu .search input:focus {
+
+            width: 190px;
+            border-color: #669900;
+        }
+
+        header .sub-menu .search .material-symbols-outlined {
+            height: 24px;
+           
+
+            position: absolute;
+
+         
+            /*수직 중앙*/
+            top: 50%;
+            transform: translateY(-50%);
+
+            right: 5px;
+
+
+            transition: .4s;
+        }
+
+
+
+        header .sub-menu .search.focused .material-symbols-outlined {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="sub-menu">
+            <ul class="menu">
+                <li> <a href="#"> Sign in</a></li>
+                <li> <a href="#"> My starbucks</a></li>
+                <li> <a href="#"> Customer service</a></li>
+                <li> <a href="#"> Find a Store</a></li>
+            </ul>
+
+
+            <div class="search">
+                <input type="text">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </div>
+
+
+
+    </header>
+
+
+    <script>
+
+        console.log("js");
+        const searchEL = document.querySelector(".search");
+        const searchInputEL = searchEL.querySelector("input");
+
+
+
+        searchEL.addEventListener('click', function () {
+            //
+            searchInputEL.focus();
+        });
+
+
+        searchInputEL.addEventListener('focus', function () {
+            searchEL.classList.add('focused');
+            searchInputEL.setAttribute('placeholder', '통합검색');
+        });
+
+
+        searchInputEL.addEventListener('blur', function () {
+            searchEL.classList.remove('focused');
+            searchInputEL.setAttribute('placeholder', '');
+        });
+    </script>
+</body>
+
+</html>
